@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>test</title>
+  </head>
+  <body>
+    <div class="auth">
+      <div class="auth__decore__block dec_1">
+        <img class="auth__decore" src="./img/Group.svg" alt="decore" />
+      </div>
+
+      <div class="auth__decore__block dec_2">
+        <img class="auth__decore" src="./img/Group.svg" alt="decore" />
+      </div>
+
+      <div class="auth__decore__block dec_3">
+        <img class="auth__decore" src="./img/Group.svg" alt="decore" />
+      </div>
+
+      <div class="auth__decore__block dec_4">
+        <img class="auth__decore" src="./img/Group.svg" alt="decore" />
+      </div>
+
+      <div class="auth__container">
+        <img src="./img/logo.png" alt="logo" class="auth__logo" />
+        <h2 class="auth__title">Авторизация</h2>
+        <form class="auth__form">
+          <fieldset class="auth__form_wrapper">
+            <div class="auth__block">
+              <img class="auth__icon" src="./img/person.svg" alt="person" />
+              <input
+                class="auth__input login"
+                name="login"
+                required
+                placeholder="Email или телефон"
+              />
+            </div>
+            <div class="auth__block">
+              <img class="auth__icon" src="./img/key.svg" alt="person" />
+              <input
+                class="auth__input password"
+                name="password"
+                autocomplete="on"
+                type="password"
+                required
+                placeholder="Пароль"
+              />
+            </div>
+            <div class="auth__form__message"></div>
+            <button class="auth__btn" type="submit">Войти</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

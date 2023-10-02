@@ -1,0 +1,169 @@
+* {
+	font-family: "Raleway", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--black: #363636;
+	--white: #ffffff;
+	--line-gradient: linear-gradient(90deg, #b7903b 0%, #cfaa59 100%);
+	--red: #f65454;
+	--green: #43a470;
+	/* title */
+	--title: var(--black);
+	/* form */
+	--form-btn-bg: var(--line-gradient);
+	--form-btn-text: var(--white);
+	--error-message: var(--red);
+	--error-border: var(--red);
+	--valid-text: var(--green);
+}
+button,
+input {
+	border: none;
+	background: none;
+	outline: none;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+}
+.auth {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth__decore__block {
+	position: absolute;
+	width: 102px;
+	height: 102px;
+}
+
+.dec_1 {
+	top: 5px;
+	left: 5px;
+}
+.dec_2 {
+	top: 5px;
+	right: 5px;
+	transform: rotate(90deg);
+}
+.dec_3 {
+	bottom: 5px;
+	right: 5px;
+	transform: rotate(180deg);
+}
+.dec_4 {
+	bottom: 5px;
+	left: 5px;
+	transform: rotate(-90deg);
+}
+
+.auth__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.auth__logo {
+	width: 207px;
+	height: 179px;
+}
+.auth__title {
+	margin-top: 10px;
+	color: var(--title);
+	font-family: Roboto;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: normal;
+}
+.auth__form {
+	margin-top: 24px;
+}
+.auth__form_wrapper {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.auth__block {
+	position: relative;
+	width: 457px;
+	height: 48px;
+}
+.auth__block:nth-child(2) {
+	margin-top: 16px;
+}
+.auth__input {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	padding-left: 48px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.auth__input:not(.auth__input-error):valid {
+	border-color: var(--valid-text);
+}
+.auth__input-error {
+	border: 1px solid var(--error-border);
+	color: var(--error-message);
+}
+.auth__icon {
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 26px;
+	height: 26px;
+}
+.auth__form__message {
+	margin-top: 16px;
+	color: var(--error-message);
+	text-align: center;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 16px;
+}
+.auth__btn {
+	margin-top: 16px;
+	padding: 16px 70px;
+	border-radius: 4px;
+	background: var(--form-btn-bg);
+	color: var(--form-btn-text);
+	text-align: center;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	cursor: pointer;
+}
+
+/* Добавленные элементы */
+
+.status-message {
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.auth-people {
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.err-server {
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 576px) {
+}
